@@ -1,0 +1,20 @@
+<div>
+  <div class="setting-content">
+    <p> <span> 全屏显示 </span>
+      <nz-switch [(ngModel)]="switchValue" (click)='btn()'></nz-switch>
+    </p>
+    <p> <span> 风格一 </span>
+      <nz-switch [(ngModel)]="switchValue"></nz-switch>
+    </p>
+    <p> <span> 风格一 </span>
+      <nz-switch [(ngModel)]="!switchValue"></nz-switch>
+    </p>
+  </div>
+
+  <p>
+    <nz-col nzSpan="12">
+      <nz-slider [nzMin]="0" [nzMax]="1" [nzStep]="0.01" [(ngModel)]="value2"
+        (ngModelChange)="ngModelChangeBtn(value2)"></nz-slider>
+    </nz-col>
+  </p>
+</div>

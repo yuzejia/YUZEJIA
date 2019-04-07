@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'YZS-ANGULAR';
+  type: boolean;
+
+  checkedBackBtn(event) {
+    console.log('子组件', event)
+    this.type = event;
+  }
 }

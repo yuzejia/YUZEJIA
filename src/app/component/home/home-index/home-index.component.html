@@ -1,0 +1,18 @@
+<div>
+  <nz-header>
+    <div class="logo">YUZEJIA</div>
+    <div class="home" (click)="open()">
+      <i nz-icon [nzType]="'setting'"></i>
+    </div>
+    <ul class="navTab" nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px;">
+      <li nz-menu-item routerLink="content" (click)="goto()">椰子树</li>
+      <li nz-menu-item [routerLink]="['/user']">苹果树</li>
+      <li nz-menu-item>樟子松</li>
+    </ul>
+  </nz-header>
+
+  <!-- 设置 页面 -->
+  <nz-drawer [nzClosable]="false" [nzVisible]="visible" nzPlacement="right" nzTitle="YUZEJIA" (nzOnClose)="close()">
+    <app-home-setting (checkedBack)='checkedBackBtn($event)'></app-home-setting>
+  </nz-drawer>
+</div>

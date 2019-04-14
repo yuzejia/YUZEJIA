@@ -36,6 +36,9 @@
               "src/styles.less"
             ],
             "scripts": [
+              "src/assets/js/canvas.js",
+              "src/assets/js/easepack.min.js",
+              "src/assets/js/tweenlite.min.js"
             ],
             "es5BrowserSupport": true
           },
